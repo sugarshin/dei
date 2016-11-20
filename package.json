@@ -1,0 +1,48 @@
+{
+  "name": "dei",
+  "version": "0.0.0",
+  "description": "A delayed iterators",
+  "main": "index",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "array",
+    "iterable",
+    "iterate",
+    "iterator",
+    "delay",
+    "promise"
+  ],
+  "scripts": {
+    "test": "ava",
+    "test:coverage": "nyc npm test",
+    "test:coverage:report": "npm run test:coverage && nyc report --reporter=text-lcov | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sugarshin/dei.git"
+  },
+  "author": "sugarshin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sugarshin/dei/issues"
+  },
+  "homepage": "https://github.com/sugarshin/dei#readme",
+  "ava": {
+    "require": [
+      "babel-register"
+    ]
+  },
+  "babel": {
+    "plugins": [
+      "transform-es2015-modules-commonjs"
+    ]
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.18.0",
+    "coveralls": "^2.11.15",
+    "nyc": "^9.0.1"
+  }
+}
